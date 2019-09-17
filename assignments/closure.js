@@ -28,6 +28,7 @@ const counterMaker = () => {
   //      "closes over" the `count` variable. It can "see" it in the parent scope!
   // 3- Return the `counter` function.
 };
+
 // Example usage: const myCounter = counterMaker();
 // myCounter(); // 1
 // myCounter(); // 2
