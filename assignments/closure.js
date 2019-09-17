@@ -4,9 +4,20 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function household(lastName) {
+  const dogFavoriteSnack = "frozen broccoli";
+
+  function dog(dogName) {
+    return `Your dog's name is ${dogName}. His favorite snack is ${dogFavoriteSnack}.`;
+  }
+
+  console.log(`Your family name is ${lastName}.`);
+  console.log(dog("Kaldi"));
+}
+
+household("Sutton");
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Implement a "counter maker" function ====
 const counterMaker = () => {
